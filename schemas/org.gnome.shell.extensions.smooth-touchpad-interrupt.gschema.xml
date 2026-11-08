@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="smooth-touchpad-interrupt">
+  <schema id="org.gnome.shell.extensions.smooth-touchpad-interrupt" path="/org/gnome/shell/extensions/smooth-touchpad-interrupt/">
+    <key name="instant-catch" type="b">
+      <default>true</default>
+      <summary>Instant Interruption Catch</summary>
+      <description>Bypasses the drag threshold when an animation is in flight, immediately latching to the animation upon touch.</description>
+    </key>
+    <key name="preserve-delta" type="b">
+      <default>true</default>
+      <summary>Preserve Gesture Delta</summary>
+      <description>Applies the accumulated movement distance rather than discarding it upon gesture recognition.</description>
+    </key>
+    <key name="allow-long-swipes" type="b">
+      <default>true</default>
+      <summary>Continuous Multi-Workspace Swiping</summary>
+      <description>Allows fluid gestures across multiple workspaces and rapid consecutive flicks.</description>
+    </key>
+    <key name="velocity-matching" type="b">
+      <default>true</default>
+      <summary>Velocity Continuity &amp; Kinetic Physics</summary>
+      <description>Calculates deceleration curves matching instantaneous finger release velocity.</description>
+    </key>
+    <key name="gentle-rest-release" type="b">
+      <default>true</default>
+      <summary>Gentle Rest Release</summary>
+      <description>Uses an ease-in-out curve when fingers are stationary at release to prevent abrupt kicks.</description>
+    </key>
+    <key name="catch-keyboard-switches" type="b">
+      <default>true</default>
+      <summary>Catch Keyboard Workspace Switches</summary>
+      <description>Allows touchpad swipes to seamlessly interrupt programmatic or keyboard workspace animations.</description>
+    </key>
+    <key name="speed-multiplier" type="d">
+      <default>1.0</default>
+      <range min="0.5" max="2.5"/>
+      <summary>Gesture Speed Multiplier</summary>
+      <description>Multiplier applied to gesture swipe delta.</description>
+    </key>
+    <key name="flick-threshold" type="i">
+      <default>8</default>
+      <range min="4" max="30"/>
+      <summary>Flick Recognition Distance</summary>
+      <description>Minimum distance in pixels required to recognize a directional flick gesture.</description>
+    </key>
+    <key name="flick-time-window" type="i">
+      <default>350</default>
+      <range min="150" max="600"/>
+      <summary>Flick Time Window</summary>
+      <description>Maximum gesture duration in milliseconds to be recognized as a flick.</description>
+    </key>
+    <key name="hold-drag-threshold" type="i">
+      <default>20</default>
+      <range min="10" max="50"/>
+      <summary>Hold-Drag Latch Distance</summary>
+      <description>Distance in pixels to transition from a flick window into 1:1 interactive hold-drag during an animation.</description>
+    </key>
+  </schema>
+</schemalist>

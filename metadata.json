@@ -1,0 +1,15 @@
+{
+  "uuid": "smooth-touchpad-interrupt@osama.gemini",
+  "name": "Smooth Touchpad Animation Interruption",
+  "description": "Correctly and smoothly handles touchpad gestures when interrupting animations in GNOME Shell. Features flick-retargeting, zero 120Hz fighting stutter, momentum continuity, delta preservation, and continuous multi-workspace swiping. Proudly vibe-coded.",
+  "shell-version": [
+    "48",
+    "49",
+    "50",
+    "51"
+  ],
+  "gettext-domain": "smooth-touchpad-interrupt",
+  "settings-schema": "org.gnome.shell.extensions.smooth-touchpad-interrupt",
+  "url": "https://github.com/o-abuawad/smooth-touchpad-interrupt",
+  "version": 1
+}
